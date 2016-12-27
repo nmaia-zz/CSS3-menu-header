@@ -15,6 +15,10 @@ a {
     text-align: center;
     background-color: #434343;
     color: #7B7B7B;
+    margin: -5px 0;  
+    border-bottom: 5px solid #434343;     
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;     
 }
 
 a:hover,
@@ -27,13 +31,19 @@ a:visited {
 a:hover {
     margin: -5px 0;
     border-bottom: 5px solid #86F92C;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+    transition: border-bottom 1s ease-in-out;        
+}
+
+a span {
+    transform: rotateY(720deg);
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
 
 a:hover span {
+    color: #fff;    
     transform: rotateY(360deg);
-    -webkit-transition: .5s ease-in-out;
-    transition: .5s ease-in-out;
-    color: #fff;
+    -webkit-transition: 1s ease-in-out;
+    transition: 1s ease-in-out;
 }
